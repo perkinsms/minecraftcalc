@@ -1,0 +1,30 @@
+---
+ helmet:
+   turtle: 2
+   leather: 1
+   golden: 2
+   chainmail: 2
+   iron: 2
+   diamond: 3
+   netherite: 3
+ chestplate:
+   leather: 3
+   golden: 5
+   chainmail: 5
+   iron: 6
+   diamond: 8
+   netherite: 8
+ leggings:
+   leather: 2
+   golden: 3
+   chainmail: 4
+   iron: 5
+   diamond: 6
+   netherite: 6
+ boots:
+   leather: 1
+   golden: 1
+   chainmail: 1
+   iron: 2
+   diamond: 3
+   netherite: 3
