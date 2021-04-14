@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 import tkinter
-import math
+from math import floor
 import yaml
-
+import Armor
+import ArmorPiece
 
 with open('defense.yaml') as file:
-    defense = yaml.load(file, Loader=yaml.FullLoader)
+    defensevalues = yaml.load(file, Loader=yaml.FullLoader)
 
-
-with open('enchantment.yaml') as file:
-    enchantment = yaml.load(file)
-
-print(enchantment)
+with open('epf.yaml') as file:
+    enchantmentvalues = yaml.load(file, Loader=yaml.FullLoader)
