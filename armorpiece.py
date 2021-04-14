@@ -19,10 +19,10 @@ class ArmorPiece:
         if self.shape==None:
             return 0
         else:
-            return (defense[self.shape][self.material] * 4)
+            return (defense[self.shape][self.material])
 
     def epf(self):
         if self.enchantment==None:
             return 0
         else:
-            return enchant_factor[self.enchantment]["level"][self.ench_lev]
+            return (enchant_factor[self.enchantment]["level"][self.ench_lev])

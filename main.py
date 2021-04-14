@@ -3,22 +3,15 @@ from armor import Armor
 from armorpiece import ArmorPiece
 import tkinter as tk
 
-my_helm = ArmorPiece(shape="helmet",material="leather",enchantment="protection",ench_lev=3)
-my_chest = ArmorPiece(shape="chestplate",material="leather")
-my_legs = ArmorPiece()
-my_boots = ArmorPiece()
+my_helm = ArmorPiece(shape="helmet",material="golden",enchantment="protection",ench_lev=3)
+my_chest = ArmorPiece(shape="chestplate",material="golden", enchantment=None, ench_lev=3)
+my_legs = ArmorPiece(shape="leggings", material="golden", enchantment=None, ench_lev=3)
+my_boots = ArmorPiece(shape="boots", material="golden", enchantment=None, ench_lev=3)
 
 arm = Armor(helmet=my_helm,chestplate=my_chest,leggings=my_legs, boots=my_boots)
 
-assert arm.value() ==16
-print(arm.value())
+print(arm.total_value())
 
+print(arm.total_epf())
 
-my_helm = ArmorPiece(shape="helmet", material="golden",enchantment="protection",ench_lev=3)
-
-print(my_helm.epf())
-
-
-window = tk.Tk()
-
-window.mainloop()
+print(100-arm.total_protection())
